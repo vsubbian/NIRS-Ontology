@@ -6,11 +6,12 @@ This repository contains the **NIRS Ontology**, developed to support knowledge r
 
 ## 📁 Repository Structure
 
-| Folder/File | Description |
-|-------------|-------------|
-| `NIRS-Ontology.owl` | The main OWL ontology file including classes, properties, annotations, and SWRL rules. |
-| `NIRS_Class_Hierarchy.html` | Interactive HTML viewer for the ontology class tree. |
-| `README.md` | Project description and usage guide. |
+| Folder/File                                | Description                                                                 |
+|--------------------------------------------|-----------------------------------------------------------------------------|
+| `NIRS-Ontology.owl`                        | Core OWL ontology file including classes, properties, annotations, and SWRL rules. |
+| `docs/NIRS_Class_Hierarchy.html`           | Interactive HTML viewer for the ontology class hierarchy with annotations. |
+| `docs/NIRS_Class_Hierarchy_with_Annotations.json` | Structured JSON file representing the ontology class tree with labels and descriptions. |
+| `README.md`                                | Project overview, usage instructions, and reproducibility information.     |
 
 ---
 
