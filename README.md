@@ -8,11 +8,6 @@ This repository contains the **NIRS Ontology**, developed to support knowledge r
 
 | Folder/File | Description |
 |-------------|-------------|
-| `NIRS.owl` | Core ontology file. |
-| `visualization/nirs_tree.html` | HTML tree to explore ontology hierarchy. |
-| `examples/queries/` | SPARQL queries and sample outputs. |
-| `docs/` | Optional: HTML documentation (Protégé export). |
-
 | `NIRS-Ontology.owl` | The main OWL ontology file including classes, properties, annotations, and SWRL rules. |
 | `README.md` | Project description and usage guide. |
 
