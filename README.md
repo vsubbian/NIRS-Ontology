@@ -9,6 +9,7 @@ This repository contains the **NIRS Ontology**, developed to support knowledge r
 | Folder/File | Description |
 |-------------|-------------|
 | `NIRS-Ontology.owl` | The main OWL ontology file including classes, properties, annotations, and SWRL rules. |
+| `NIRS_Class_Hierarchy.html` | Interactive HTML viewer for the ontology class tree. |
 | `README.md` | Project description and usage guide. |
 
 ---
@@ -29,16 +30,16 @@ To explore or extend the ontology:
 To reproduce:
 1. Clone this repository.
 2. Download [Protégé](https://protege.stanford.edu/) and load `NIRS-Ontology.owl`.
-3. Load the ontology in a semantic reasoning environment (e.g., Protégé).
 ---
 
 ## 🧬 Data Source
 The ontology was evaluated using data and clinical scenarios derived from the **eICU Collaborative Research Database**.  
 Access: [https://physionet.org/content/eicu-crd/](https://physionet.org/content/eicu-crd/) (credentialed access required).
+
 ---
 
 ## 📬 Contact
-For questions, collaboration, or ontology extension:
+For questions or collaboration inquiries, please contact:
 
 **Md Fantacher Islam**  
 PhD Student, Systems and Industrial Engineering  
