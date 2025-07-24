@@ -26,12 +26,6 @@ To explore or extend the ontology:
 
 ---
 
-## 🧪 Results Reproducibility
-To reproduce:
-1. Clone this repository.
-2. Download [Protégé](https://protege.stanford.edu/) and load `NIRS-Ontology.owl`.
----
-
 ## 🧬 Data Source
 The ontology was evaluated using data and clinical scenarios derived from the **eICU Collaborative Research Database**.  
 Access: [https://physionet.org/content/eicu-crd/](https://physionet.org/content/eicu-crd/) (credentialed access required).
