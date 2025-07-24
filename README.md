@@ -1,7 +1,6 @@
 # NIRS-Ontology: An Ontology for Non-Invasive Respiratory Support in Acute Care 
 
-This repository contains the **NIRS Ontology**, developed to support knowledge representation in acute care settings. It integrates ventilation modalities, therapy parameters, patient characteristics, and clinical outcomes using standardized vocabularies and rule-based reasoning.
-
+This repository contains the **NIRS Ontology**, developed to support knowledge representation in acute care settings. It integrates ventilation modalities, therapy parameters, patient characteristics, and clinical outcomes using standardized vocabularies and rule-based reasoning. To explore the interactive class hierarchy with standardized annotations, click here to view the [NIRS Ontology Class Hierarchy](https://info531_healthcare_project.github.io/NIRS-Ontology/NIRS_Class_Hierarchy.html)
 ---
 
 ## 📁 Repository Structure
