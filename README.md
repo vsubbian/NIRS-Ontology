@@ -4,9 +4,9 @@ This repository contains the **NIRS Ontology**, developed to support knowledge r
 
 ---
 
-## Availability
+## Availability in NCBO BioPortal
 
-This ontology is available in this repository. It has also been submitted to the NCBO BioPortal and can be accessed here:
+This ontology has also been submitted to the NCBO BioPortal and can be accessed here:
 
 * **NCBO BioPortal:** [https://bioportal.bioontology.org/ontologies/NIRS](https://bioportal.bioontology.org/ontologies/NIRS)
 ---
