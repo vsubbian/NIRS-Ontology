@@ -25,20 +25,6 @@
               "description": "Pulmonary edema is a condition where fluid accumulates in the lungs, making it difficult to breathe.",
               "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/19242006",
               "code": "SNOMEDCT: 19242006"
-            },
-            {
-              "name": "Sepsis",
-              "label": "Sepsis",
-              "description": "Sepsis is a life-threatening condition that occurs when the body's immune system overreacts to an infection, leading to widespread inflammation and organ damage.",
-              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/91302008",
-              "code": "SNOMEDCT: 91302008"
-            },
-            {
-              "name": "SepticShock",
-              "label": "Septic Shock",
-              "description": "Septic shock is a life-threatening condition that occurs when an infection spreads throughout the body and causes a severe drop in blood pressure.",
-              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/76571007",
-              "code": "SNOMEDCT: 76571007"
             }
           ]
         },
@@ -142,7 +128,30 @@
               "label": "Acute Respiratory Failure",
               "description": "Acute respiratory failure (ARF) is a life-threatening condition where the lungs cannot adequately exchange oxygen and carbon dioxide, leading to low oxygen levels (hypoxemia) and/or high carbon dioxide levels (hypercapnia) in the blood.",
               "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/65710008",
-              "code": "SNOMEDCT: 65710008"
+              "code": "SNOMEDCT: 65710008",
+              "children": [
+                {
+                  "name": "Hypercapnic",
+                  "label": "Hypercapnic Respiratory Failure",
+                  "description": "http://purl.bioontology.org/ontology/SNOMEDCT/709109004",
+                  "seeAlso": "Respiratory failure due to a high level of carbon dioxide in the blood.",
+                  "code": "SNOMEDCT/709109004"
+                },
+                {
+                  "name": "Hypoxemic",
+                  "label": "Hypoxemic Respiratory Failure",
+                  "description": "Hypoxemic respiratory failure (Type I) is a condition where the lungs fail to oxygenate the blood sufficiently, defined by low oxygen levels (PaO2 < 60 mmHg or SaO2 < 88%) without a significant buildup of carbon dioxide (hypercapnia), often caused by V/Q mismatch (uneven ventilation/blood flow) from issues like pneumonia, pulmonary edema, or shunting, leading to symptoms like shortness of breath and cyanosis.",
+                  "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/10676831000119101",
+                  "code": "SNOMEDCT: 10676831000119101"
+                },
+                {
+                  "name": "Mixed",
+                  "label": "Mixed Respiratory Failure",
+                  "description": "Mixed respiratory failure is a severe condition where the lungs fail at both oxygenation (leading to low oxygen/hypoxemia) and ventilation (leading to high carbon dioxide/hypercapnia), combining elements of Type I (hypoxemic) and Type II (hypercapnic) respiratory failure, often seen as an acute worsening (acute-on-chronic) in patients with underlying lung disease. It signifies a critical inability to exchange gases effectively, requiring urgent intervention.",
+                  "seeAlso": "",
+                  "code": ""
+                }
+              ]
             },
             {
               "name": "MetabolicAcidosis",
@@ -159,6 +168,29 @@
               "code": "SNOMEDCT: 12326000"
             }
           ]
+        },
+        {
+          "name": "SystemicCondition",
+          "label": "SystemicCondition",
+          "description": "",
+          "seeAlso": "",
+          "code": "",
+          "children": [
+            {
+              "name": "Sepsis",
+              "label": "Sepsis",
+              "description": "Sepsis is a life-threatening condition that occurs when the body's immune system overreacts to an infection, leading to widespread inflammation and organ damage.",
+              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/91302008",
+              "code": "SNOMEDCT: 91302008"
+            },
+            {
+              "name": "SepticShock",
+              "label": "Septic Shock",
+              "description": "Septic shock is a life-threatening condition that occurs when an infection spreads throughout the body and causes a severe drop in blood pressure.",
+              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/76571007",
+              "code": "SNOMEDCT: 76571007"
+            }
+          ]
         }
       ]
     },
@@ -170,39 +202,64 @@
       "code": "",
       "children": [
         {
-          "name": "AvoidingIntubation",
-          "label": "Avoiding Intubation",
-          "description": "Avoiding Intubation refers to the successful management of respiratory failure without the need for endotracheal intubation and invasive mechanical ventilation.",
+          "name": "ClinicalTrajectory",
+          "label": "ClinicalTrajectory",
+          "description": "",
           "seeAlso": "",
-          "code": "OMOP CDM 'Observation' Table"
+          "code": "",
+          "children": [
+            {
+              "name": "AvoidingIntubation",
+              "label": "Avoiding Intubation",
+              "description": "Avoiding Intubation refers to the successful management of respiratory failure without the need for endotracheal intubation and invasive mechanical ventilation.",
+              "seeAlso": "",
+              "code": ""
+            },
+            {
+              "name": "IntubationRequired",
+              "label": "Intubation Required",
+              "description": "Intubation is a procedure that involves inserting a tube into a patient's airway to help them breathe. It's required when a patient can't breathe on their own, or if their airway is blocked or damaged",
+              "seeAlso": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C52668&ns=ncit",
+              "code": "NCI Thesaurus Code:  C178949"
+            },
+            {
+              "name": "WeaningFailure",
+              "label": "Weaning Failure",
+              "description": "Weaning failure occurs when a patient can't pass a breathing test or needs to be reintubated after being taken off a ventilator",
+              "seeAlso": "http://purl.bioontology.org/ontology/MEDDRA/10066829",
+              "code": "MEDDRA: 10066829"
+            },
+            {
+              "name": "WeaningSuccessful",
+              "label": "Successful Weaning",
+              "description": "Successful weaning from mechanical ventilation, or other forms of therapy, means a patient can breathe independently without support for a certain period after extubation or decannulation, without requiring re-intubation or re-introduction of the device.",
+              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/404998008",
+              "code": "SNOMEDCT: 404998008"
+            }
+          ]
         },
         {
-          "name": "IntubationRequired",
-          "label": "Intubation Required",
-          "description": "Intubation is a procedure that involves inserting a tube into a patient's airway to help them breathe. It's required when a patient can't breathe on their own, or if their airway is blocked or damaged",
-          "seeAlso": "https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C52668&ns=ncit",
-          "code": "NCI Thesaurus Code:  C178949"
-        },
-        {
-          "name": "ReductionHypercapnia",
-          "label": "Reduction Hypercapnia",
-          "description": "To reduce hypercapnia (excessive carbon dioxide in the blood), treatment focuses on addressing the underlying cause and improving ventilation, often with non-invasive or invasive respiratory support like BiPAP, CPAP, or mechanical ventilation.",
-          "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/29596007",
-          "code": "SNOMEDCT: 29596007"
-        },
-        {
-          "name": "WeaningFailure",
-          "label": "Weaning Failure",
-          "description": "Weaning failure occurs when a patient can't pass a breathing test or needs to be reintubated after being taken off a ventilator",
-          "seeAlso": "http://purl.bioontology.org/ontology/MEDDRA/10066829",
-          "code": "MEDDRA: 10066829"
-        },
-        {
-          "name": "WeaningSuccessful",
-          "label": "Successful Weaning",
-          "description": "Successful weaning from mechanical ventilation, or other forms of therapy, means a patient can breathe independently without support for a certain period after extubation or decannulation, without requiring re-intubation or re-introduction of the device.",
-          "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/404998008",
-          "code": "SNOMEDCT: 404998008"
+          "name": "PhysiologicResponse",
+          "label": "PhysiologicResponse",
+          "description": "",
+          "seeAlso": "",
+          "code": "",
+          "children": [
+            {
+              "name": "ImprovementOxygenation",
+              "label": "Improvement Oxygenation",
+              "description": "Improving oxygenation on a ventilator means increasing the delivery of oxygen to the body's tissues by adjusting ventilator settings like FiO2 (oxygen concentration) and Mean Airway Pressure (MAP), primarily through PEEP, to optimize gas exchange in the lungs while protecting the lung tissue",
+              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/284032008",
+              "code": "SNOMEDCT: 284032008"
+            },
+            {
+              "name": "ReductionHypercapnia",
+              "label": "Reduction Hypercapnia",
+              "description": "To reduce hypercapnia (excessive carbon dioxide in the blood), treatment focuses on addressing the underlying cause and improving ventilation, often with non-invasive or invasive respiratory support like BiPAP, CPAP, or mechanical ventilation.",
+              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/29596007",
+              "code": "SNOMEDCT: 29596007"
+            }
+          ]
         }
       ]
     },
@@ -686,21 +743,21 @@
                   "label": "Optiflow",
                   "description": "Optiflow is a nasal cannula that provides respiratory support by delivering heated, humidified air and oxygen",
                   "seeAlso": "",
-                  "code": "OMOP CDM 'Device ' Table"
+                  "code": ""
                 },
                 {
                   "name": "Oximizer",
                   "label": "Oxymizer",
                   "description": "The Oxymizer is a type of oxygen reservoir nasal cannula, a non-invasive device that delivers oxygen more efficiently than a standard nasal cannula by storing oxygen during exhalation and releasing it during inhalation, potentially requiring lower oxygen flow rates.",
                   "seeAlso": "",
-                  "code": "OMOP CDM 'Device ' Table"
+                  "code": ""
                 },
                 {
                   "name": "Vapotherm",
                   "label": "Vapotherm",
                   "description": "Vapotherm a medical device that provides mask-free respiratory support through a high-velocity nasal cannula, delivering warmed and humidified gas to patients experiencing respiratory distress.",
                   "seeAlso": "https://vapotherm.com/",
-                  "code": "OMOP CDM 'Device ' Table"
+                  "code": ""
                 }
               ]
             },
@@ -882,6 +939,68 @@
           ]
         },
         {
+          "name": "TherapeuticPhase",
+          "label": "Therapeutic Phase",
+          "description": "",
+          "seeAlso": "",
+          "code": "",
+          "children": [
+            {
+              "name": "AcuteResuscitation",
+              "label": "Acute Resuscitation",
+              "description": "Acute resuscitation is the immediate, life-saving medical process of restoring breathing, circulation, and consciousness in critically ill or injured patients, primarily focusing on securing the airway (A), ensuring breathing (B), and maintaining circulation (C) through techniques like CPR, oxygen, IV fluids, and medications, aiming to return spontaneous function and preserve organ viability until definitive treatment can be given",
+              "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/439569004",
+              "code": "SNOMEDCT: 439569004"
+            },
+            {
+              "name": "PalliativeCareSettings",
+              "label": "Palliative Care Settings",
+              "description": "The use of noninvasive ventilation where the intensity of breathlessness frequently worsens as death approaches to provide symptomatic relief",
+              "seeAlso": "",
+              "code": "",
+              "children": [
+                {
+                  "name": "CeilingOfTherapy",
+                  "label": "Ceiling of Therapy",
+                  "description": "A scenario where patients seek symptom alleviation, mainly breathlessness, and survival is not a goal; it is effective if it improves breathlessness without unduly prolonging life",
+                  "seeAlso": "",
+                  "code": ""
+                },
+                {
+                  "name": "DoNotIntubate",
+                  "label": "Do Not Intubate",
+                  "description": "A scenario where a patient has decided to forego intubation, but still wants to receive salvage noninvasive ventilation therapy with the goal of surviving the hospitalisation",
+                  "seeAlso": "",
+                  "code": ""
+                }
+              ]
+            },
+            {
+              "name": "WeaningPhase",
+              "label": "WeaningPhase",
+              "description": "A period using noninvasive ventilation to speed up the weaning process, while avoiding the side-effects and complications of invasive ventilation",
+              "seeAlso": "",
+              "code": "",
+              "children": [
+                {
+                  "name": "PostExtubationSupport",
+                  "label": "Post Extubation Support",
+                  "description": "Noninvasive ventilation applied immediately after extubation in patients at high risk of extubation failure, such as those older than sixty-five years or with underlying cardiac or respiratory disease, to avoid re-intubation",
+                  "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/718089001",
+                  "code": "SNOMEDCT: 718089001"
+                },
+                {
+                  "name": "WeaningSupport",
+                  "label": "Weaning Support",
+                  "description": "A strategy used immediately following extubation in patients with an acute chronic obstructive pulmonary disease exacerbation who fail a spontaneous breathing trial",
+                  "seeAlso": "",
+                  "code": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "TherapyType",
           "label": "TherapyType",
           "description": "SNOMED CT: 277132007 (Non-invasive ventilation therapy)\nNCIT: C15351 (Respiratory Therapy)",
@@ -956,18 +1075,18 @@
               "code": "",
               "children": [
                 {
-                  "name": "TherapyPhase",
+                  "name": "TherapyInterval",
                   "label": "Therapy Phase",
                   "description": "Therapy Phaseencompasses the period during which the patient is actively receiving NIV support, including the initial setup, ongoing adjustments, and monitoring for effectiveness and complications.",
                   "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/261774000",
                   "code": "SNOMEDCT: 261774000"
                 },
                 {
-                  "name": "WeaningPhase",
-                  "label": "Weaning Phase",
-                  "description": "WeaningPhase refers to the gradual reduction or discontinuation of a treatment or support, such as mechanical ventilation, medication, or a specific therapy, as a patient's condition improves and they become more independent",
-                  "seeAlso": "http://purl.bioontology.org/ontology/SNOMEDCT/1144585003",
-                  "code": "SNOMEDCT: 1144585003"
+                  "name": "WeaningInterval",
+                  "label": "WeaningInterval",
+                  "description": "",
+                  "seeAlso": "",
+                  "code": ""
                 }
               ]
             },
