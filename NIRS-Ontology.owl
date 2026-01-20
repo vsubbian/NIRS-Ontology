@@ -40,6 +40,9 @@
         <Class IRI="#AcuteRespiratoryFailure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AcuteResuscitation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Age"/>
     </Declaration>
     <Declaration>
@@ -82,6 +85,9 @@
         <Class IRI="#COPD"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#COVID19"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CPAP"/>
     </Declaration>
     <Declaration>
@@ -94,6 +100,9 @@
         <Class IRI="#CardiovascularDisorders"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CeilingOfTherapy"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ChronicAlcoholicMyopathy"/>
     </Declaration>
     <Declaration>
@@ -101,6 +110,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ClinicalObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClinicalTrajectory"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Comorbidity"/>
@@ -136,6 +148,9 @@
         <Class IRI="#DisordersOfAirways"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DoNotIntubate"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Duration"/>
     </Declaration>
     <Declaration>
@@ -163,7 +178,13 @@
         <Class IRI="#HighFlowOxygenSystem"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hypercapnic"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HypertensionHeartFailure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypoxemic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IPAP"/>
@@ -173,6 +194,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Immunosuppression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImprovementOxygenation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Indication"/>
@@ -209,6 +233,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MetastaticLungCancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mixed"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MotorNeuropathy"/>
@@ -262,6 +289,9 @@
         <Class IRI="#PaCO2"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PalliativeCareSettings"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Parameters"/>
     </Declaration>
     <Declaration>
@@ -271,6 +301,9 @@
         <Class IRI="#PauseTime"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PhysiologicResponse"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PleuralEffusionCHF"/>
     </Declaration>
     <Declaration>
@@ -278,6 +311,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Post-PolioSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostExtubationSupport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PressureSettings"/>
@@ -337,7 +373,13 @@
         <Class IRI="#SpontaneousRespiratoryRate"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SystemicCondition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#TerminationTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TherapeuticPhase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Therapy"/>
@@ -346,7 +388,7 @@
         <Class IRI="#TherapyDuration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TherapyPhase"/>
+        <Class IRI="#TherapyInterval"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TherapyType"/>
@@ -385,10 +427,16 @@
         <Class IRI="#WeaningFailure"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WeaningInterval"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#WeaningPhase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WeaningSuccessful"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeaningSupport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#pH"/>
@@ -469,6 +517,9 @@
         <DataProperty IRI="#hasPaCO2Value"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasPaO2Value"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasPressureSupport"/>
     </Declaration>
     <Declaration>
@@ -502,7 +553,7 @@
         <NamedIndividual IRI="#COPD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#COPDSevere"/>
+        <NamedIndividual IRI="#COVID19"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CPAP"/>
@@ -511,19 +562,19 @@
         <NamedIndividual IRI="#CongestiveHeartFailure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DiabetesMellitus"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#FiO2"/>
+        <NamedIndividual IRI="#DiabetesMellitusType2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HFNC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#HighFlowMask"/>
+        <NamedIndividual IRI="#ImprovementOxygenation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#IntubationRequired"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NIRSModality"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NeuromuscularDisorders"/>
@@ -652,6 +703,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AcuteResuscitation"/>
+        <Class IRI="#TherapeuticPhase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Age"/>
         <Class IRI="#Demographics"/>
     </SubClassOf>
@@ -669,7 +724,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AvoidingIntubation"/>
-        <Class IRI="#Outcome"/>
+        <Class IRI="#ClinicalTrajectory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BMI"/>
@@ -733,6 +788,10 @@
         <Class IRI="#DisordersOfAirways"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#COVID19"/>
+        <Class IRI="#PulmonaryInfections"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CPAP"/>
         <Class IRI="#PAPMachine"/>
     </SubClassOf>
@@ -767,6 +826,10 @@
         <Class IRI="#Comorbidity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CeilingOfTherapy"/>
+        <Class IRI="#PalliativeCareSettings"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ChronicAlcoholicMyopathy"/>
         <Class IRI="#Myopathy"/>
     </SubClassOf>
@@ -777,6 +840,10 @@
     <SubClassOf>
         <Class IRI="#ClinicalObservation"/>
         <Class IRI="#Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClinicalTrajectory"/>
+        <Class IRI="#Outcome"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Comorbidity"/>
@@ -821,6 +888,10 @@
     <SubClassOf>
         <Class IRI="#DisordersOfAirways"/>
         <Class IRI="#Indication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DoNotIntubate"/>
+        <Class IRI="#PalliativeCareSettings"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Duration"/>
@@ -891,8 +962,16 @@
         <Class IRI="#Device"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Hypercapnic"/>
+        <Class IRI="#AcuteRespiratoryFailure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HypertensionHeartFailure"/>
         <Class IRI="#CardiovascularDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypoxemic"/>
+        <Class IRI="#AcuteRespiratoryFailure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IPAP"/>
@@ -905,6 +984,10 @@
     <SubClassOf>
         <Class IRI="#Immunosuppression"/>
         <Class IRI="#ImmunologicDisorders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImprovementOxygenation"/>
+        <Class IRI="#PhysiologicResponse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InitiationTime"/>
@@ -924,7 +1007,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IntubationRequired"/>
-        <Class IRI="#Outcome"/>
+        <Class IRI="#ClinicalTrajectory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#KidneyFailure"/>
@@ -963,6 +1046,10 @@
     <SubClassOf>
         <Class IRI="#MetastaticLungCancer"/>
         <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mixed"/>
+        <Class IRI="#AcuteRespiratoryFailure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MotorNeuropathy"/>
@@ -1043,12 +1130,20 @@
         <Class IRI="#BloodGasParameters"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PalliativeCareSettings"/>
+        <Class IRI="#TherapeuticPhase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Parameters"/>
         <Class IRI="#Therapy"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PauseTime"/>
         <Class IRI="#TimeEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysiologicResponse"/>
+        <Class IRI="#Outcome"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PleuralEffusionCHF"/>
@@ -1082,6 +1177,10 @@
     <SubClassOf>
         <Class IRI="#Post-PolioSyndrome"/>
         <Class IRI="#MotorNeuropathy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostExtubationSupport"/>
+        <Class IRI="#WeaningPhase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PressureSettings"/>
@@ -1133,7 +1232,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ReductionHypercapnia"/>
-        <Class IRI="#Outcome"/>
+        <Class IRI="#PhysiologicResponse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RenalDisorders"/>
@@ -1165,7 +1264,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sepsis"/>
-        <Class IRI="#Cardiovascular"/>
+        <Class IRI="#SystemicCondition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sepsis"/>
@@ -1190,7 +1289,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SepticShock"/>
-        <Class IRI="#Cardiovascular"/>
+        <Class IRI="#SystemicCondition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SepticShock"/>
@@ -1230,15 +1329,23 @@
         <Class IRI="#RespiratoryRate"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SystemicCondition"/>
+        <Class IRI="#Indication"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TerminationTime"/>
         <Class IRI="#TimeEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TherapeuticPhase"/>
+        <Class IRI="#Therapy"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TherapyDuration"/>
         <Class IRI="#Duration"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#TherapyPhase"/>
+        <Class IRI="#TherapyInterval"/>
         <Class IRI="#IntervalTime"/>
     </SubClassOf>
     <SubClassOf>
@@ -1301,15 +1408,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WeaningFailure"/>
-        <Class IRI="#Outcome"/>
+        <Class IRI="#ClinicalTrajectory"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#WeaningPhase"/>
+        <Class IRI="#WeaningInterval"/>
         <Class IRI="#IntervalTime"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#WeaningPhase"/>
+        <Class IRI="#TherapeuticPhase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WeaningSuccessful"/>
-        <Class IRI="#Outcome"/>
+        <Class IRI="#ClinicalTrajectory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeaningSupport"/>
+        <Class IRI="#WeaningPhase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pH"/>
@@ -1400,11 +1515,6 @@
         <Class IRI="#PAPMachine"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#PulmonaryEdema"/>
-        <Class IRI="#Sepsis"/>
-        <Class IRI="#SepticShock"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#WeaningFailure"/>
         <Class IRI="#WeaningSuccessful"/>
     </DisjointClasses>
@@ -1433,8 +1543,8 @@
         <NamedIndividual IRI="#COPD"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#COPD"/>
-        <NamedIndividual IRI="#COPDSevere"/>
+        <Class IRI="#PulmonaryInfections"/>
+        <NamedIndividual IRI="#COVID19"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Device"/>
@@ -1450,15 +1560,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Comorbidity"/>
-        <NamedIndividual IRI="#DiabetesMellitus"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#OxygenSettings"/>
-        <NamedIndividual IRI="#FiO2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Parameters"/>
-        <NamedIndividual IRI="#FiO2"/>
+        <NamedIndividual IRI="#DiabetesMellitusType2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Device"/>
@@ -1469,12 +1571,20 @@
         <NamedIndividual IRI="#HFNC"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#TherapyType"/>
-        <NamedIndividual IRI="#HighFlowMask"/>
+        <Class IRI="#Outcome"/>
+        <NamedIndividual IRI="#ImprovementOxygenation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysiologicResponse"/>
+        <NamedIndividual IRI="#ImprovementOxygenation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Outcome"/>
         <NamedIndividual IRI="#IntubationRequired"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TherapyType"/>
+        <NamedIndividual IRI="#NIRSModality"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Comorbidity"/>
@@ -1530,68 +1640,68 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasComorbidity"/>
-        <NamedIndividual IRI="#DiabetesMellitus"/>
-        <NamedIndividual IRI="#DiabetesMellitus"/>
+        <NamedIndividual IRI="#Patient_01"/>
+        <NamedIndividual IRI="#DiabetesMellitusType2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasComorbidity"/>
+        <ObjectProperty IRI="#hasDevice"/>
         <NamedIndividual IRI="#Patient_01"/>
-        <NamedIndividual IRI="#NeuromuscularDisorders"/>
+        <NamedIndividual IRI="#CPAP"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIndication"/>
         <NamedIndividual IRI="#Patient_01"/>
+        <NamedIndividual IRI="#COPD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDevice"/>
+        <NamedIndividual IRI="#Patient_02"/>
+        <NamedIndividual IRI="#HFNC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIndication"/>
+        <NamedIndividual IRI="#Patient_02"/>
         <NamedIndividual IRI="#AcuteRespiratoryFailure"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasIndication"/>
-        <NamedIndividual IRI="#Patient_01"/>
-        <NamedIndividual IRI="#Pneumonia"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasIndication"/>
-        <NamedIndividual IRI="#Patient_01"/>
-        <NamedIndividual IRI="#Sepsis"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTherapyType"/>
-        <NamedIndividual IRI="#Patient_01"/>
-        <NamedIndividual IRI="#HFNC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasIndication"/>
-        <NamedIndividual IRI="#Patient_02"/>
-        <NamedIndividual IRI="#ObesityHypoventilationSyndrome"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTherapyType"/>
-        <NamedIndividual IRI="#Patient_02"/>
-        <NamedIndividual IRI="#HFNC"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIndication"/>
         <NamedIndividual IRI="#Patient_03"/>
+        <NamedIndividual IRI="#PulmonaryEdema"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTherapyType"/>
+        <NamedIndividual IRI="#Patient_03"/>
+        <NamedIndividual IRI="#CPAP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIndication"/>
+        <NamedIndividual IRI="#Patient_04"/>
+        <NamedIndividual IRI="#AcuteRespiratoryDistress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTherapyType"/>
+        <NamedIndividual IRI="#Patient_04"/>
+        <NamedIndividual IRI="#CPAP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIndication"/>
+        <NamedIndividual IRI="#Patient_05"/>
         <NamedIndividual IRI="#COPD"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIndication"/>
-        <NamedIndividual IRI="#Patient_04"/>
-        <NamedIndividual IRI="#AcuteRespiratoryFailure"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTherapyType"/>
-        <NamedIndividual IRI="#Patient_04"/>
-        <NamedIndividual IRI="#HFNC"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTherapyType"/>
         <NamedIndividual IRI="#Patient_05"/>
-        <NamedIndividual IRI="#BiPAP"/>
+        <NamedIndividual IRI="#Pneumonia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIndication"/>
         <NamedIndividual IRI="#Patient_06"/>
-        <NamedIndividual IRI="#AcuteRespiratoryDistress"/>
+        <NamedIndividual IRI="#Sepsis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTherapyType"/>
+        <NamedIndividual IRI="#Patient_06"/>
+        <NamedIndividual IRI="#CPAP"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIndication"/>
@@ -1629,94 +1739,104 @@
         <NamedIndividual IRI="#Sepsis"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasTime"/>
+        <DataProperty IRI="#hasFiO2Value"/>
         <NamedIndividual IRI="#Patient_01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasEPAPValue"/>
+        <DataProperty IRI="#hasPEEPValue"/>
+        <NamedIndividual IRI="#Patient_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDuration"/>
         <NamedIndividual IRI="#Patient_02"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFiO2Value"/>
         <NamedIndividual IRI="#Patient_02"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.9</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.55</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasIPAPValue"/>
+        <DataProperty IRI="#hasPFRatio"/>
         <NamedIndividual IRI="#Patient_02"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">109</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasOxygenFlowRate"/>
+        <DataProperty IRI="#hasPHValue"/>
+        <NamedIndividual IRI="#Patient_02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPaO2Value"/>
         <NamedIndividual IRI="#Patient_02"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasPEEPValue"/>
+        <DataProperty IRI="#hasSpO2Value"/>
         <NamedIndividual IRI="#Patient_02"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">93</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasAge"/>
+        <DataProperty IRI="#hasRespiratoryRate"/>
         <NamedIndividual IRI="#Patient_03"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasDuration"/>
-        <NamedIndividual IRI="#Patient_03"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasFiO2Value"/>
-        <NamedIndividual IRI="#Patient_03"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.61</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasOxygenFlowRate"/>
-        <NamedIndividual IRI="#Patient_03"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPEEPValue"/>
-        <NamedIndividual IRI="#Patient_03"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasDuration"/>
-        <NamedIndividual IRI="#Patient_04"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">26</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPEEPValue"/>
-        <NamedIndividual IRI="#Patient_04"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasTime"/>
-        <NamedIndividual IRI="#Patient_04"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasDuration"/>
-        <NamedIndividual IRI="#Patient_05"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPEEPValue"/>
-        <NamedIndividual IRI="#Patient_05"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasIPAPValue"/>
-        <NamedIndividual IRI="#Patient_06"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">23</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasSpO2Value"/>
+        <NamedIndividual IRI="#Patient_03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFiO2Value"/>
+        <NamedIndividual IRI="#Patient_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPEEPValue"/>
+        <NamedIndividual IRI="#Patient_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPFRatio"/>
+        <NamedIndividual IRI="#Patient_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPaO2Value"/>
+        <NamedIndividual IRI="#Patient_04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFiO2Value"/>
+        <NamedIndividual IRI="#Patient_05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPEEPValue"/>
+        <NamedIndividual IRI="#Patient_05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFiO2Value"/>
+        <NamedIndividual IRI="#Patient_06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasPEEPValue"/>
         <NamedIndividual IRI="#Patient_06"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPFRatio"/>
+        <NamedIndividual IRI="#Patient_06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">247</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPaO2Value"/>
+        <NamedIndividual IRI="#Patient_06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">247</Literal>
     </DataPropertyAssertion>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasDevice"/>
@@ -1973,7 +2093,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasPHValue"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasPaCO2Value"/>
@@ -2010,135 +2130,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Higher IPAP improves CO₂ clearance in hypercapnic COPD patients.</Literal>
+            <Literal>Sepsis patients with PaO2/FiO2 ≥ 241 show increased survival rates and avoid intubation with initial NIRS modality.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q4R3: Increase_IPAP_for_Hypercapnia</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasComorbidity"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#COPDSevere"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasIPAPValue"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/ipap"/>
-            </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fio2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/fio2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.60</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Neuromuscular disease patients (ALS, Myopathy) are more likely to need NIV therapy.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q2R2: Neuromuscular_NIV_Use</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasComorbidity"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#NeuromuscularDisorders"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If an Obesity Hypoventilation patient requires IPAP &gt; 18, BiPAP is recommended.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R7: ObesityHypoventilation_HighIPAP_BiPAP</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasComorbidity"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#ObesityHypoventilationSyndrome"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasIPAPValue"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/ipap"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/ipap"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Higher FiO₂ levels improve oxygenation in ARDS patients.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q4R2: Increase_FiO2_for_ARDS</Literal>
+            <Literal>Q2R4: Sepsis_Survival_Threshold</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2148,28 +2144,32 @@
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasIndication"/>
                 <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#AcuteRespiratoryDistress"/>
+                <NamedIndividual IRI="#Sepsis"/>
             </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasPFRatio"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/pfr"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/pfr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">241</Literal>
+            </BuiltInAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTherapyType"/>
                 <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#HFNC"/>
+                <Variable IRI="/t"/>
             </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fio2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
-                <Variable IRI="/fio2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.50</Literal>
-            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#TherapyType"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
+                <ObjectProperty IRI="#hasOutcome"/>
                 <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#HFNC"/>
+                <NamedIndividual IRI="#AvoidingIntubation"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2180,11 +2180,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If a patient has ARDS and a P/F ratio between 150 and 300, HFNC is recommended.</Literal>
+            <Literal>If a Mild ARDS has 200 ≤ P/F ratio ≤ 300 and PEEP/CPAP ≥ 5, CPAP is recommended</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R1.A: ARDS_ModeratePFRatio_HFNC</Literal>
+            <Literal>Q1R1: MildARDS_ModeratePFRatio_CPAP</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2201,20 +2201,29 @@
                 <Variable IRI="/pt"/>
                 <Variable IRI="/pfr"/>
             </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
                 <Variable IRI="/pfr"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
             </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
                 <Variable IRI="/pfr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasPEEPValue"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/peep"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/peep"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#recommendedTherapyType"/>
                 <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#HFNC"/>
+                <NamedIndividual IRI="#CPAP"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
@@ -2225,11 +2234,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If a patient has ARDS and an S/F ratio between 200 and 315, HFNC is recommended.</Literal>
+            <Literal>If a COPD patient requires FiO₂ ≥ 0.40, BiPAP is recommended.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R1.B: ARDS_ModerateSFRatio_HFNC</Literal>
+            <Literal>Q1R3: COPD_HighFiO2_BiPAP</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2239,20 +2248,362 @@
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasIndication"/>
                 <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#AcuteRespiratoryDistress"/>
+                <NamedIndividual IRI="#COPD"/>
             </ObjectPropertyAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#hasSFRatio"/>
+                <DataProperty IRI="#hasFiO2Value"/>
                 <Variable IRI="/pt"/>
-                <Variable IRI="/sfr"/>
+                <Variable IRI="/fiO2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/fiO2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.40</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#BiPAP"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>COPD exacerbations requiring high FiO₂ (&gt;0.60) elevate mortality risk through worsened hypercapnia and acidosis.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q2R5: COPD_Mortality_Risk_Acidosis</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#COPD"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasFiO2Value"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/fio2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/fio2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.60</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasOutcome"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#WeaningFailure"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Elderly (≥ 75 years) COVID-19 patients have a higher risk of NIRS failure or mortality.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q2R1: Elderly_COVID_NIRS_Failure</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#COVID19"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/age"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasOutcome"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#WeaningFailure"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>For CHF patients with respiratory distress (RR &gt;25 breaths/min, SpO2 &lt;90%), NIRS modality is recommended to alleviate dyspnea and reduce the rate of mechanical endotracheal intubation.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q1R2: NIRS_For_CHF_Respiratory_Distress</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRespiratoryRate"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/rr"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/rr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSpO2Value"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/spo2"/>
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
-                <Variable IRI="/sfr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">315</Literal>
+                <Variable IRI="/spo2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#NIRSModality"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>If a neuromuscular disease is diagnosed, the patient is recommended to the NIRS Modality.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q2R2: Neuromuscular_NIRS_Modality</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#NeuromuscularDisorders"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#NIRSModality"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>For Obesity Hypoventilation patients require CPAP as the first line therapy.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q2R3: OHS_CPAP_FirstLine_Therapy</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#ObesityHypoventilationSyndrome"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#CPAP"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>For OHS patients with hypercapnia (PaCO2 &gt;45 mmHg), recommend BiPAP if CPAP fails to resolve hypoventilation.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q1R7: ObesityHypoventilationSyndrome_BiPAP</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#ObesityHypoventilationSyndrome"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasPaCO2Value"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/paco2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/paco2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+            </BuiltInAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#CPAP"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#recommendedTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#BiPAP"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>For Obesity Hypoventilation Syndrome patients, titrating EPAP to 10-15 cmH₂O recruits collapsed lungs and improves oxygenation.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q4R1: OHS_EPAP_for_Hypoxemia</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#ObesityHypoventilationSyndrome"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEPAPValue"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/epap"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/ipap"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/sfr"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                <Variable IRI="/ipap"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasOutcome"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#ImprovementOxygenation"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>For Pneumonia patients with hypoxemia (SpO2 &lt;90% on &gt;10 L/min standard O2) and high work of breathing (RR &gt;25), recommend HFNC.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q1R8: Pneumonia_Hypoxemia_HFNC</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIndication"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#Pneumonia"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSpO2Value"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/spo2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/spo2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOxygenFlowRate"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/flow"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/flow"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRespiratoryRate"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/rr"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/rr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -2270,7 +2621,57 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Prolonged BiPAP use (&gt; 24 hours) without improvement increases intubation risk.</Literal>
+            <Literal>Weaning success likelihood increases when EPAP is reduced to 4 cmH2O, typically requiring a mean duration of 35 hours with BiPAP.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q3R3: BiPAP_Weaning_EPAP_Target</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTherapyType"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#BiPAP"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasEPAPValue"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/epap"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/epap"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDuration"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/duration"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/duration"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasOutcome"/>
+                <Variable IRI="/pt"/>
+                <NamedIndividual IRI="#WeaningSuccessful"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Intubation after BiPAP duration &gt; 24 hours is associated with fewer Ventilator Free Days.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2281,11 +2682,6 @@
                 <Class IRI="#Patient"/>
                 <Variable IRI="/pt"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#AcuteRespiratoryFailure"/>
-            </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTherapyType"/>
                 <Variable IRI="/pt"/>
@@ -2316,7 +2712,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>HFNC  started within 3 hours in acute respiratory failure reduces intubation risk.</Literal>
+            <Literal>If HFNC is started within 3 hours, it may reduce intubation risk in patients with P/F ≤ 200 mm Hg.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2327,22 +2723,26 @@
                 <Class IRI="#Patient"/>
                 <Variable IRI="/pt"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasPFRatio"/>
                 <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#AcuteRespiratoryFailure"/>
-            </ObjectPropertyAtom>
+                <Variable IRI="/pfr"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/pfr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </BuiltInAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasTherapyType"/>
                 <Variable IRI="/pt"/>
                 <NamedIndividual IRI="#HFNC"/>
             </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasTime"/>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTiming"/>
                 <Variable IRI="/pt"/>
                 <Variable IRI="/time"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
                 <Variable IRI="/time"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
             </BuiltInAtom>
@@ -2362,336 +2762,34 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Elderly (≥ 75 years) COPD patients have a higher risk of NIV failure.</Literal>
+            <Literal>If high IPAP (&gt;20–30 cmH₂O) or EPAP (&gt;10–12 cmH₂O) are required without improvement in pH, PaCO₂, or respiratory rate despite optimization, the patient is at high risk of NIRS failure and needing intubation.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q2R1: Elderly_COPD_HigherNIVFailure</Literal>
+            <Literal>Q1R4: HighIPAP_HighPEEP_Intubation</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
                 <Class IRI="#Patient"/>
                 <Variable IRI="/pt"/>
             </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#COPD"/>
-            </ObjectPropertyAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#hasAge"/>
+                <DataProperty IRI="#hasIPAPValue"/>
                 <Variable IRI="/pt"/>
-                <Variable IRI="/age"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
-                <Variable IRI="/age"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasOutcome"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#WeaningFailure"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>COPD patients with high PEEP &amp; FiO₂ are at increased mortality risk.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q2R5: COPD_HighPEEP_HighFiO2_Mortality</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#COPD"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasPEEPValue"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/peep"/>
+                <Variable IRI="/ipap"/>
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/peep"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+                <Variable IRI="/ipap"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
             </BuiltInAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fiO2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/fiO2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.80</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasOutcome"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#IntubationRequired"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If a COPD patient requires FiO₂ ≥ 0.60, BiPAP is recommended.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R3: COPD_HighFiO2_BiPAP</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#COPD"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fiO2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
-                <Variable IRI="/fiO2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.60</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If a CHF patient has PEEP ≥ 8, BiPAP is recommended.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R2: CHF_HighPEEP_BiPAP</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#CongestiveHeartFailure"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasPEEPValue"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/peep"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
-                <Variable IRI="/peep"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>BMI ≥ 35 in obesity hypoventilation patients requires BiPAP.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q2R3: ObesityHypoventilation_BiPAP</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#ObesityHypoventilationSyndrome"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasBMI"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/bmi"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
-                <Variable IRI="/bmi"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Adjusting EPAP levels improves oxygenation in pneumonia-related hypoxemia.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q4R1: Adjust_EPAP_for_Hypoxemia</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#Pneumonia"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#hasEPAPValue"/>
                 <Variable IRI="/pt"/>
                 <Variable IRI="/epap"/>
             </DataPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fio2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
-                <Variable IRI="/fio2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.60</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#BiPAP"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If a patient has Pneumonia and requires high oxygen flow (&gt;40 L/min), HFNC is recommended.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R8: Pneumonia_HighFlow_HFNC</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#Pneumonia"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOxygenFlowRate"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/flow"/>
-            </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/flow"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#recommendedTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#HFNC"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Septic patients with FiO₂ &gt; 0.70 are at higher intubation risk.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q2R4: Sepsis_HighFiO2_Intubation</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIndication"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#Sepsis"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fiO2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/fiO2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.70</Literal>
+                <Variable IRI="/epap"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -2709,106 +2807,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>HFNC used ≤ 48 hours with low PEEP increases likelihood of weaning success.</Literal>
+            <Literal>If P/F Ratio &lt; 100 or PaCO2 increases by 20% from basal levels, the patient is at risk of Non-invasive respiratory support failure and need intubation.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q3R3: Short_HFNC_Low_PEEP_Weaning_Success</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasTherapyType"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#HFNC"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasDuration"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/duration"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
-                <Variable IRI="/duration"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">48</Literal>
-            </BuiltInAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasPEEPValue"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/peep"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
-                <Variable IRI="/peep"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasOutcome"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#WeaningSuccessful"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If FiO₂ &gt; 0.80 and PEEP &gt; 12 during nirs indicates intubation risk.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R6: NIV_Therapy_Failure_Intubation</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Patient"/>
-                <Variable IRI="/pt"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasFiO2Value"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/fiO2"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/fiO2"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.80</Literal>
-            </BuiltInAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasPEEPValue"/>
-                <Variable IRI="/pt"/>
-                <Variable IRI="/peep"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/peep"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasOutcome"/>
-                <Variable IRI="/pt"/>
-                <NamedIndividual IRI="#IntubationRequired"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If FiO₂ ≤ 0.40 and PEEP ≤ 5, the patient is successfully weaned.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R5: LowFiO2_LowPEEP_WeaningSuccess</Literal>
+            <Literal>Q1R5: NIRS_Failure_Leads_To_Intubation</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2831,7 +2834,7 @@
             </DataPropertyAtom>
             <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
                 <Variable IRI="/peep"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -2849,11 +2852,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>If IPAP and PEEP is high suggests patient may require intubation.</Literal>
+            <Literal>If P/F Ratio &lt; 100 or PaCO2 increases by 20% from basal levels, the patient is at risk of Non-invasive respiratory support failure and needs intubation.</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>Q1R4: HighIPAP_HighPEEP_Intubation</Literal>
+            <Literal>Q1R6: NIRS_Failure_Leads_To_Intubation</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -2861,22 +2864,49 @@
                 <Variable IRI="/pt"/>
             </ClassAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#hasIPAPValue"/>
+                <DataProperty IRI="#hasPFRatio"/>
                 <Variable IRI="/pt"/>
-                <Variable IRI="/ipap"/>
+                <Variable IRI="/pfr"/>
             </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/ipap"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/pfr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
             </BuiltInAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasPEEPValue"/>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasOutcome"/>
                 <Variable IRI="/pt"/>
-                <Variable IRI="/peep"/>
+                <NamedIndividual IRI="#IntubationRequired"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>For patients with an S/F ratio &lt; 264, the likelihood of intubation increases.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Q4R2: Low_SF_Ratio_Predicts_Failure</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patient"/>
+                <Variable IRI="/pt"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSFRatio"/>
+                <Variable IRI="/pt"/>
+                <Variable IRI="/sfr"/>
             </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
-                <Variable IRI="/peep"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/sfr"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">264</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
@@ -3029,6 +3059,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
+        <IRI>#AcuteResuscitation</IRI>
+        <Literal>SNOMEDCT: 439569004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AcuteResuscitation</IRI>
+        <Literal>Acute resuscitation is the immediate, life-saving medical process of restoring breathing, circulation, and consciousness in critically ill or injured patients, primarily focusing on securing the airway (A), ensuring breathing (B), and maintaining circulation (C) through techniques like CPR, oxygen, IV fluids, and medications, aiming to return spontaneous function and preserve organ viability until definitive treatment can be given</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcuteResuscitation</IRI>
+        <Literal>Acute Resuscitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#AcuteResuscitation</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/439569004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#Asthma</IRI>
         <Literal>SNOMEDCT: 195967001</Literal>
     </AnnotationAssertion>
@@ -3086,11 +3136,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#AsthmaMild</IRI>
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/370218001</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#AvoidingIntubation</IRI>
-        <Literal>OMOP CDM &apos;Observation&apos; Table</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3264,6 +3309,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
+        <IRI>#COVID19</IRI>
+        <Literal>SNOMEDCT: 840539006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#COVID19</IRI>
+        <Literal>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#COVID19</IRI>
+        <Literal>Coronavirus disease 2019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#COVID19</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/840539006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#CPAP</IRI>
         <Literal>HCPCS: E0601</Literal>
     </AnnotationAssertion>
@@ -3281,6 +3346,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#CPAP</IRI>
         <Literal>http://purl.bioontology.org/ontology/HCPCS/E0601</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CeilingOfTherapy</IRI>
+        <Literal>A scenario where patients seek symptom alleviation, mainly breathlessness, and survival is not a goal; it is effective if it improves breathlessness without unduly prolonging life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CeilingOfTherapy</IRI>
+        <Literal>Ceiling of Therapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3363,6 +3438,16 @@
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/83291003</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CumulativeTime</IRI>
+        <Literal>Cumulative time for Non-Invasive Ventilation (NIV) therapy refers to the total duration a patient spends using the NIV machine, which is generally defined in two ways: the overall period of care (including breaks) or the actual hours the mask was worn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CumulativeTime</IRI>
+        <Literal>Cumulative Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#DiabetesInsipidus</IRI>
         <Literal>ICD10CM: E23.2</Literal>
@@ -3381,26 +3466,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#DiabetesInsipidus</IRI>
         <Literal>http://purl.bioontology.org/ontology/ICD10CM/E23.2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#DiabetesMellitus</IRI>
-        <Literal>SNOMEDCT: 7321100</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#DiabetesMellitus</IRI>
-        <Literal>Diabetes mellitus, commonly known as diabetes, is a chronic metabolic disease characterized by high blood sugar (glucose) levels</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DiabetesMellitus</IRI>
-        <Literal>Diabetes Mellitus</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#DiabetesMellitus</IRI>
-        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/7321100</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3435,12 +3500,22 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DiabetesMellitusType2</IRI>
-        <Literal>Diabetes mellitus type 1</Literal>
+        <Literal>Diabetes mellitus type 2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#DiabetesMellitusType2</IRI>
         <Literal>http://purl.bioontology.org/ontology/ICD10CM/E11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DoNotIntubate</IRI>
+        <Literal>A scenario where a patient has decided to forego intubation, but still wants to receive salvage noninvasive ventilation therapy with the goal of surviving the hospitalisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DoNotIntubate</IRI>
+        <Literal>Do Not Intubate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3584,6 +3659,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
+        <IRI>#Hypercapnic</IRI>
+        <Literal>SNOMEDCT/709109004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hypercapnic</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/709109004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hypercapnic</IRI>
+        <Literal>Hypercapnic Respiratory Failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Hypercapnic</IRI>
+        <Literal>Respiratory failure due to a high level of carbon dioxide in the blood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#HypertensionHeartFailure</IRI>
         <Literal>SNOMEDCT: 84114007</Literal>
     </AnnotationAssertion>
@@ -3601,6 +3696,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#HypertensionHeartFailure</IRI>
         <Literal>(http://purl.bioontology.org/ontology/SNOMEDCT/84114007)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasOntoCode"/>
+        <IRI>#Hypoxemic</IRI>
+        <Literal>SNOMEDCT: 10676831000119101</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hypoxemic</IRI>
+        <Literal>Hypoxemic respiratory failure (Type I) is a condition where the lungs fail to oxygenate the blood sufficiently, defined by low oxygen levels (PaO2 &lt; 60 mmHg or SaO2 &lt; 88%) without a significant buildup of carbon dioxide (hypercapnia), often caused by V/Q mismatch (uneven ventilation/blood flow) from issues like pneumonia, pulmonary edema, or shunting, leading to symptoms like shortness of breath and cyanosis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hypoxemic</IRI>
+        <Literal>Hypoxemic Respiratory Failure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Hypoxemic</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/10676831000119101</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3641,6 +3756,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Immunosuppression</IRI>
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/38013005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasOntoCode"/>
+        <IRI>#ImprovementOxygenation</IRI>
+        <Literal>SNOMEDCT: 284032008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImprovementOxygenation</IRI>
+        <Literal>Improving oxygenation on a ventilator means increasing the delivery of oxygen to the body&apos;s tissues by adjusting ventilator settings like FiO2 (oxygen concentration) and Mean Airway Pressure (MAP), primarily through PEEP, to optimize gas exchange in the lungs while protecting the lung tissue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImprovementOxygenation</IRI>
+        <Literal>Improvement Oxygenation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ImprovementOxygenation</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/284032008</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3798,9 +3933,9 @@
         <Literal>Metabolic Acidosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#MetabolicAcidosis</IRI>
-        <Literal>SNOMEDCT: 59455009</Literal>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/59455009</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3821,6 +3956,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#MetastaticLungCancer</IRI>
         <Literal>http://purl.bioontology.org/ontology/LNC/LA28289-9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mixed</IRI>
+        <Literal>Mixed respiratory failure is a severe condition where the lungs fail at both oxygenation (leading to low oxygen/hypoxemia) and ventilation (leading to high carbon dioxide/hypercapnia), combining elements of Type I (hypoxemic) and Type II (hypercapnic) respiratory failure, often seen as an acute worsening (acute-on-chronic) in patients with underlying lung disease. It signifies a critical inability to exchange gases effectively, requiring urgent intervention.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mixed</IRI>
+        <Literal>Mixed Respiratory Failure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -3923,11 +4068,6 @@
         <Literal>http://purl.bioontology.org/ontology/ICD9CM/278.03</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#Optiflow</IRI>
-        <Literal>OMOP CDM &apos;Device &apos; Table</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Optiflow</IRI>
         <Literal>Optiflow is a nasal cannula that provides respiratory support by delivering heated, humidified air and oxygen</Literal>
@@ -3936,11 +4076,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Optiflow</IRI>
         <Literal>Optiflow</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#Oximizer</IRI>
-        <Literal>OMOP CDM &apos;Device &apos; Table</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4038,6 +4173,16 @@
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/25284008</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PalliativeCareSettings</IRI>
+        <Literal>The use of noninvasive ventilation where the intensity of breathlessness frequently worsens as death approaches to provide symptomatic relief</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PalliativeCareSettings</IRI>
+        <Literal>Palliative Care Settings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#PauseTime</IRI>
         <Literal>SNOMEDCT: 250821007</Literal>
@@ -4045,12 +4190,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PauseTime</IRI>
-        <Literal>Pause Time</Literal>
+        <Literal>PauseTime refers to the period between the end of inspiration and the beginning of expiration, during which airflow ceases</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PauseTime</IRI>
-        <Literal>PauseTime refers to the period between the end of inspiration and the beginning of expiration, during which airflow ceases</Literal>
+        <Literal>Pause Time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -4116,6 +4261,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Post-PolioSyndrome</IRI>
         <Literal>http://purl.bioontology.org/ontology/MEDDRA/10036239</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#hasOntoCode"/>
+        <IRI>#PostExtubationSupport</IRI>
+        <Literal>SNOMEDCT: 718089001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PostExtubationSupport</IRI>
+        <Literal>Noninvasive ventilation applied immediately after extubation in patients at high risk of extubation failure, such as those older than sixty-five years or with underlying cardiac or respiratory disease, to avoid re-intubation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PostExtubationSupport</IRI>
+        <Literal>Post Extubation Support</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#PostExtubationSupport</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/718089001</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -4196,6 +4361,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#RespiratoryAcidosis</IRI>
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/12326000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RespiratoryRate</IRI>
+        <Literal>Respiratory Rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -4378,6 +4548,11 @@
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/397898000</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TherapeuticPhase</IRI>
+        <Literal>Therapeutic Phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#TherapyDuration</IRI>
         <Literal>SNOMEDCT: 261773006</Literal>
@@ -4399,22 +4574,22 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#TherapyPhase</IRI>
+        <IRI>#TherapyInterval</IRI>
         <Literal>SNOMEDCT: 261774000</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#TherapyPhase</IRI>
+        <IRI>#TherapyInterval</IRI>
         <Literal>Therapy Phaseencompasses the period during which the patient is actively receiving NIV support, including the initial setup, ongoing adjustments, and monitoring for effectiveness and complications.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TherapyPhase</IRI>
+        <IRI>#TherapyInterval</IRI>
         <Literal>Therapy Phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#TherapyPhase</IRI>
+        <IRI>#TherapyInterval</IRI>
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/261774000</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -4524,11 +4699,6 @@ NCIT: C15351 (Respiratory Therapy)</Literal>
         <Literal>https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;version=24.11d&amp;ns=ncit&amp;code=C62433&amp;key=n819119070&amp;b=1&amp;n=0&amp;vse=1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#Vapotherm</IRI>
-        <Literal>OMOP CDM &apos;Device &apos; Table</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Vapotherm</IRI>
         <Literal>Vapotherm a medical device that provides mask-free respiratory support through a high-velocity nasal cannula, delivering warmed and humidified gas to patients experiencing respiratory distress.</Literal>
@@ -4564,6 +4734,11 @@ NCIT: C15351 (Respiratory Therapy)</Literal>
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/31996006</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VolumeSettings</IRI>
+        <Literal>Volume Settings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
         <IRI>#WeaningFailure</IRI>
         <Literal>MEDDRA: 10066829</Literal>
@@ -4584,24 +4759,19 @@ NCIT: C15351 (Respiratory Therapy)</Literal>
         <Literal>http://purl.bioontology.org/ontology/MEDDRA/10066829</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#hasOntoCode"/>
-        <IRI>#WeaningPhase</IRI>
-        <Literal>SNOMEDCT: 1144585003</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WeaningInterval</IRI>
+        <Literal>A weaning interval for a ventilator refers to the specific, often scheduled, period during which a patient is allowed to breathe with reduced or no support from a mechanical ventilator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeaningInterval</IRI>
+        <Literal>Weaning Interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WeaningPhase</IRI>
-        <Literal>WeaningPhase refers to the gradual reduction or discontinuation of a treatment or support, such as mechanical ventilation, medication, or a specific therapy, as a patient&apos;s condition improves and they become more independent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WeaningPhase</IRI>
-        <Literal>Weaning Phase</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#WeaningPhase</IRI>
-        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/1144585003</Literal>
+        <Literal>A period using noninvasive ventilation to speed up the weaning process, while avoiding the side-effects and complications of invasive ventilation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#hasOntoCode"/>
@@ -4622,6 +4792,21 @@ NCIT: C15351 (Respiratory Therapy)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#WeaningSuccessful</IRI>
         <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/404998008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WeaningSupport</IRI>
+        <Literal>A strategy used immediately following extubation in patients with an acute chronic obstructive pulmonary disease exacerbation who fail a spontaneous breathing trial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeaningSupport</IRI>
+        <Literal>Weaning Support</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDuration</IRI>
+        <Literal>hasDuration in hrs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
